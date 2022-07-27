@@ -1,0 +1,56 @@
+:root {
+  --light: #ffffff;
+}
+
+
+.content {
+  padding: 25px;
+  background-color: var(--light);
+  box-shadow: 5px 5px 25px 8px grey;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.welcome-text {
+  flex: 30%;
+  padding: 20px;
+}
+
+.welcome-images {
+  flex: 70%;
+}
+
+.amenities {
+  display: flex;
+  flex: 60%;
+}
+
+.amenities1 {
+  flex: 30%;
+}
+
+.amenities2 {
+  flex: 30%;
+}
+
+.about {
+  flex: 40%;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .flex-container {
+    flex-flow: column;
+  }
+
+  .welcome-text, .welcome-images, .amenities1, .amenities2, .about {
+    flex: 100%;
+  }
+}
