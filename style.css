@@ -44,15 +44,6 @@ blockquote {
   align-items: center;
 }
 
-.welcome-text {
-  flex: 40%;
-  padding: 20px;
-}
-
-.welcome-images {
-  flex: 60%;
-}
-
 .amenities {
   display: flex;
   flex: 60%;
