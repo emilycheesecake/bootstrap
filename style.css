@@ -21,13 +21,13 @@ blockquote {
   font-style: italic;
 }
 
-
 .content {
   padding: 25px;
   background-color: var(--light);
   box-shadow: 5px 5px 25px 8px grey;
   margin-top: 32px;
   text-align: center;
+  border-radius: 16px;
 }
 
 .content h1 {
@@ -45,12 +45,12 @@ blockquote {
 }
 
 .welcome-text {
-  flex: 30%;
+  flex: 40%;
   padding: 20px;
 }
 
 .welcome-images {
-  flex: 70%;
+  flex: 60%;
 }
 
 .amenities {
@@ -59,11 +59,11 @@ blockquote {
 }
 
 .amenities1 {
-  flex: 30%;
+  flex: 50%;
 }
 
 .amenities2 {
-  flex: 30%;
+  flex: 50%;
 }
 
 .about {
@@ -93,5 +93,15 @@ blockquote {
 
   .welcome-text, .welcome-images, .amenities1, .amenities2, .about, .contact, .map {
     flex: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .welcome-text {
+    flex: 20%;
+  }
+
+  .welcome-images {
+    flex: 80%;
   }
 }
