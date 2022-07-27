@@ -2,6 +2,25 @@
   --light: #ffffff;
 }
 
+body {
+  background-color: #f2f1d5;
+}
+
+footer {
+  text-align: center;
+  padding: 32px;
+}
+
+nav {
+  background: url("images/background.png");
+  box-shadow: 0px 2px 5px 5px grey;
+}
+
+blockquote {
+  margin-top: 10px;
+  font-style: italic;
+}
+
 
 .content {
   padding: 25px;
@@ -9,6 +28,14 @@
   box-shadow: 5px 5px 25px 8px grey;
   margin-top: 32px;
   text-align: center;
+}
+
+.content h1 {
+  padding: 32px;
+}
+
+.content h2 {
+  padding: 20px;
 }
 
 .flex-container {
@@ -44,13 +71,27 @@
   padding: 20px;
 }
 
+.reviews {
+  flex: 60%;
+  padding: 20px;
+}
+
+.reviews img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.map {
+  flex: 40%;
+}
+
 
 @media screen and (max-width: 700px) {
-  .flex-container {
+  .flex-container, .amenities {
     flex-flow: column;
   }
 
-  .welcome-text, .welcome-images, .amenities1, .amenities2, .about {
+  .welcome-text, .welcome-images, .amenities1, .amenities2, .about, .contact, .map {
     flex: 100%;
   }
 }
